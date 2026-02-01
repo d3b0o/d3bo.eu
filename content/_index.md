@@ -3,20 +3,17 @@ dismissible: true
 date: 2025-12-31
 title: "Home"
 author:
-  name: "Hugo Narrow"
-  title: "A Clean and Minimal Hugo Theme"
-  description: "Focused on content and user experience."
-  avatar: "/images/avatar.svg"
+  name: "d3bo"
+  title: "Pentester"
+  description: "Trying to learn low level stuff"
+  avatar: "logo.webp"
   social:
     - name: "GitHub"
-      url: "https://github.com/tom2almighty/hugo-narrow"
+      url: "https://github.com/d3b0o"
       icon: "github"
-    - name: "Twitter"
-      url: "https://twitter.com/username"
-      icon: "twitter"
-    - name: "Email"
-      url: "mailto:hello@example.com"
-      icon: "email"
+    - name: "Linkedin"
+      url: "https://www.linkedin.com/in/d3bo/"
+      icon: "linkedin"
 ---
 
-🎉 **Site Redesign!** We've completely revamped our website with faster loading speeds, a beautiful new interface, and smoother user experience. Welcome to explore the new features!
+**Site Redesign!** This is my new website you can still check te old one at [old.d3bo.eu](https://old.d3bo.eu)
