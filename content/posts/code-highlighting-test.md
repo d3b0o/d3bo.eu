@@ -1,16 +1,16 @@
 ---
-title: "代码高亮测试"
+title: "Code Highlighting Test"
 date: 2024-01-16T10:00:00+08:00
-draft: false
-description: "测试代码高亮功能"
-tags: ["测试", "代码", "语法高亮"]
-categories: ["代码高亮"]
+draft: true
+description: "Testing code highlighting features"
+tags: ["test", "code", "syntax-highlighting"]
+categories: ["code-highlighting"]
 slug: code-highlighting-test
 ---
 
-# 代码高亮测试
+# Code Highlighting Test
 
-本文用于测试新的代码高亮功能，包括语法高亮、复制按钮、语言显示等。
+This article is used to test the new code highlighting feature, including syntax highlighting, copy button, language display, etc.
 
 ## JavaScript
 
@@ -23,24 +23,24 @@ function fibonacci(n) {
 
 
 const result = fibonacci(10);
-console.log(`第10个斐波那契数是：${result}`);
+console.log(`The 10th Fibonacci number is: ${result}`);
 
-// 异步/等待
+// Async/Await
 const asyncFunction = async () => {
   try {
     const response = await fetch('/api/data');
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('获取数据时出错：', error);
+    console.error('Error fetching data:', error);
   }
 };
 ```
 
-## 带行号的代码块
+## Codeblock with Line Numbers
 
 ```python {lineNos=true}
-# 带行号的 Python 代码
+# Python with line numbers
 import asyncio
 from typing import List, Optional
 
@@ -49,7 +49,7 @@ class DataProcessor:
         self.data = data
 
     def process(self) -> Optional[dict]:
-        """处理数据并返回结果"""
+        """Process the data and return the result"""
         if not self.data:
             return None
 
@@ -65,26 +65,26 @@ class DataProcessor:
         return result
 ```
 
-## 高亮特定行
+## Highlighting Specific Lines
 
 ```go {lineNos=true hl_lines=[3,6,8]}
 package main
 
-import "fmt"  // 这一行将被高亮
+import "fmt"  // This line will be highlighted
 
 func main() {
-    message := "你好，世界！"  // 这一行也将被高亮
+    message := "Hello, World!"  // This line will also be highlighted
 
-    fmt.Println(message)  // 这一行也将被高亮
+    fmt.Println(message)  // This line will also be highlighted
 
     for i := 0; i < 3; i++ {
-        fmt.Printf("计数：%d\n", i)
+        fmt.Printf("Count: %d\n", i)
     }
 }
 ```
 
 
-## 带文件名的代码块
+## Codeblock with Filename
 
 ```typescript {filename="api.ts"}
 // TypeScript API
@@ -120,7 +120,7 @@ class ApiClient {
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP 错误！状态：${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     return response.json();
@@ -144,27 +144,28 @@ async function getUsers(): Promise<User[]> {
     const response = await client.get<User[]>('/users');
     return response.data;
   } catch (error) {
-    console.error('获取用户时出错：', error);
+    console.error('Error fetching users:', error);
     return [];
   }
 }
 ```
 
 
-## 纯文本代码块
+## Plain Text Codeblock
 
 ```
-这是一个纯文本代码块。
-它不应该有语法高亮。
-你可以在这里测试复制功能。
+This is a plain text codeblock.
+It should not have syntax highlighting.
+You can test the copy functionality here.
 
 function test() {
-    console.log("这是一个测试。");
+    console.log("This is a test.");
 }
 ```
 
-## 行内代码
+## Inline Code
 
-这是一个行内代码示例：`const x = 42;` 和 `npm install` 以及 `git commit -m "更新"`。
+This is an inline code example：`const x = 42;` and `npm install` and `git commit -m "update"`.
 
 ---
+

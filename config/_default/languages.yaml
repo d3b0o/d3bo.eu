@@ -3,10 +3,6 @@ en:
   languageName: "English"
   weight: 1
 
-zh-cn:
-  languageCode: zh-CN
-  languageName: "简体中文"
-  weight: 2
 
 # ja:
 #   languageCode: ja-JP

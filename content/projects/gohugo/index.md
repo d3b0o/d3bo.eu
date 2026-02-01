@@ -1,7 +1,7 @@
 ---
-title: "Hugo - The World's Fastest Framework"
+title: "SoterCTF"
 date: 2024-02-20T14:30:00+08:00
-draft: false
+draft: true
 slug: hugo-framework
 description: "The world's fastest framework for building websites, written in Go"
 summary: "A fast and flexible static site generator built with Go, powering thousands of websites worldwide."
