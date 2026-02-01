@@ -1,8 +1,8 @@
-baseURL: https://hugo-narrow.vercel.app/
+baseURL: https://d3bo.eu/
 languageCode: en-US
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-title: Hugo Narrow
+title: d3bo's Blog
 theme: "hugo-narrow"
 
 hasCJKLanguage: true
