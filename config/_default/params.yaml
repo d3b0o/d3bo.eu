@@ -63,41 +63,12 @@ series:
 
 
 # Default color scheme
-colorScheme: "default"
+colorScheme: "Claude"
 themes:
-  default:
-    name: "Default"
-    order: 1
   claude:
     name: "Claude"
     order: 2
-  bumblebee:
-    name: "Bumblebee"
-    order: 3
-  emerald:
-    name: "Emerald"
-    order: 4
-  nord:
-    name: "Nord"
-    order: 5
-  sunset:
-    name: "Sunset"
-    order: 6
-  abyss:
-    name: "Abyss"
-    order: 7
-  dracula:
-    name: "Dracula"
-    order: 8
-  amethyst:
-    name: "Amethyst"
-    order: 9
-  slate:
-    name: "Slate"
-    order: 10
-  twitter:
-    name: "Twitter"
-    order: 11
+
 
 # Home page configuration
 home:
