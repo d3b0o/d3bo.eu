@@ -6,7 +6,7 @@ author:
   name: "d3bo"
   title: "Pentester"
   description: "Trying to learn low level stuff"
-  avatar: "logo.webp"
+  avatar: "/images/logo.webp"
   social:
     - name: "GitHub"
       url: "https://github.com/d3b0o"

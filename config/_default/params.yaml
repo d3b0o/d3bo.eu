@@ -1,43 +1,41 @@
 # Basic site info with SEO
-description: "A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design."
-keywords: ["Hugo", "Blog", "Theme", "Technology", "Programming"]
-defaultAuthor: "Hugo Narrow"
+description: "d3bo's personal blog about binary exploitation, reverse engineering, and programming."
+keywords: ["pwn", "binary exploitation", "reverse engineering", "technology", "programming"]
+defaultAuthor: "d3bo"
 language: "en-US"
-shortName: "Hugo Narrow"  # PWA
+shortName: "d3bo"  # PWA
 images:
-  - "/images/og-default.avif"
+  - "/images/logo.webp"  # PWA and social share image
 
 # Favicon
 favicon:
-  svg: "/favicon.svg"  # SVG format favicon (recommended)
+  svg: "/logo.webp"  # SVG format favicon (recommended)
 
 # Author info
 author:
-  name: "Hugo Narrow"
-  title: "A Clean and Minimal Hugo Theme"
-  description: "Focused on content and user experience."
-  avatar: "/images/avatar.svg"
+  name: "d3bo"
+  title: "Pentester"
+  description: "Trying to learn some low level stuff"
+  avatar: "/images/logo.webp"  # Avatar image path relative to static folder
   social:
     - name: "GitHub"
-      url: "https://github.com/username"
+      url: "https://github.com/d3b0o"
       icon: "github"
-    - name: "Twitter"
-      url: "https://twitter.com/username"
-      icon: "twitter"
-    - name: "Email"
-      url: "mailto:hello@example.com"
-      icon: "email"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/d3bo/"
+      icon: "linkedin"
+
 
 # Header configuration (modularized)
 header:
   sticky: true  # Enable sticky navigation bar
   logo:
-    image: "/images/logo.svg"  # Logo path relative to static folder, leave empty to use site title first letter
+    image: "/images/logo.webp"  # Logo path relative to static folder, leave empty to use site title first letter
     link: "/"  # Click to home page
   # UI Components Control (header controls)
-  showThemeSwitch: true      # Set to false to hide theme style switcher (palette icon)
-  showDarkModeSwitch: true   # Set to false to hide dark mode switcher (sun/moon icon)
-  showLanguageSwitch: true   # Set to false to hide language switcher
+  showThemeSwitch: false      # Set to false to hide theme style switcher (palette icon)
+  showDarkModeSwitch: false  # Set to false to hide dark mode switcher (sun/moon icon)
+  showLanguageSwitch: false   # Set to false to hide language switcher
   languageSwitchMode: "dropdown"  # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
 # Dock display mode
@@ -67,7 +65,7 @@ colorScheme: "Claude"
 themes:
   claude:
     name: "Claude"
-    order: 2
+    order: 1
 
 
 # Home page configuration
@@ -92,7 +90,7 @@ post:
   relatedPostsCount: 3        # posts number
   license:
     show: true
-    author: "Hugo Narrow"
+    author: "d3bo"
     name: "CC BY-NC-SA 4.0"
     description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
     url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
