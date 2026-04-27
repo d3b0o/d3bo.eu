@@ -19,3 +19,4 @@ go.sum
 yarn.lock
 .prettierrc
 .prettierignore
+/public

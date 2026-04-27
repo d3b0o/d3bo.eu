@@ -1,0 +1,23 @@
+default:
+  image: "hugomods/hugo:exts"
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  THEME_URL: "github.com/adityatelange/hugo-PaperMod"
+
+test:  # builds and tests your site
+  script:
+    - hugo
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+
+create-pages:  # a user-defined job that builds your pages and saves them to the specified path.
+  script:
+    - hugo
+  pages: true  # specifies that this is a Pages job
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production
