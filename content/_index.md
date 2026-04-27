@@ -4,7 +4,7 @@ date: 2025-12-31
 title: "Home"
 author:
   name: "d3bo"
-  title: "Pentester"
+  title: "Junior Pentester"
   description: "Trying to learn low level stuff"
   avatar: "/images/logo.webp"
   social:
