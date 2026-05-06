@@ -4,16 +4,16 @@ main:
     weight: 20
     params:
       icon: posts
-  - name: nav.projects
-    pageRef: /projects
-    weight: 25
-    params:
-      icon: projects
-  - name: nav.categories
-    pageRef: /categories
-    weight: 30
-    params:
-      icon: categories
+  # - name: nav.projects
+  #   pageRef: /projects
+  #   weight: 25
+  #   params:
+  #     icon: projects
+  # - name: nav.categories
+  #   pageRef: /categories
+  #   weight: 30
+  #   params:
+  #     icon: categories
   - name: nav.tags
     pageRef: /tags
     weight: 40
@@ -32,11 +32,11 @@ footer:
     weight: 10
     params:
       icon: about
-  - name: Contact
-    url: https://google.com
-    weight: 20
-    params:
-      icon: contact
+  # - name: Contact
+  #   url: https://google.com
+  #   weight: 20
+  #   params:
+      # icon: contact
   - name: RSS Feed
     url: /index.xml
     weight: 30
@@ -46,22 +46,22 @@ footer:
 # footer social link
 social:
   - name: GitHub
-    url: https://github.com/username
+    url: https://github.com/d3bo
     weight: 10
     params:
       icon: github
-  - name: Twitter
-    url: https://twitter.com/username
-    weight: 20
-    params:
-      icon: twitter
+  # - name: Twitter
+  #   url: https://twitter.com/username
+  #   weight: 20
+  #   params:
+  #     icon: twitter
   - name: LinkedIn
-    url: https://linkedin.com/in/username
+    url: https://linkedin.com/in/d3bo
     weight: 30
     params:
       icon: linkedin
   - name: Email
-    url: mailto:your.email@example.com
+    url: mailto:arnaudeusedes@gmail.com
     weight: 40
     params:
       icon: email

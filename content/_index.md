@@ -6,7 +6,7 @@ author:
   name: "d3bo"
   title: "Junior Pentester"
   description: "Trying to learn low level stuff"
-  avatar: "/images/logo.webp"
+  avatar: "/images/logo.jpg"
   social:
     - name: "GitHub"
       url: "https://github.com/d3b0o"

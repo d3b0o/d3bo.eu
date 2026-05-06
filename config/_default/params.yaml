@@ -30,11 +30,11 @@ author:
 header:
   sticky: true  # Enable sticky navigation bar
   logo:
-    image: "/images/logo.webp"  # Logo path relative to static folder, leave empty to use site title first letter
+    image: "/images/logo.jpg"  # Logo path relative to static folder, leave empty to use site title first letter
     link: "/"  # Click to home page
   # UI Components Control (header controls)
   showThemeSwitch: false      # Set to false to hide theme style switcher (palette icon)
-  showDarkModeSwitch: false  # Set to false to hide dark mode switcher (sun/moon icon)
+  showDarkModeSwitch: true  # Set to false to hide dark mode switcher (sun/moon icon)
   showLanguageSwitch: false   # Set to false to hide language switcher
   languageSwitchMode: "dropdown"  # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
