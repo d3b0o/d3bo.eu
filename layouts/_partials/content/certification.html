@@ -1,0 +1,28 @@
+{{- $title := .acronym | default .title -}}
+{{- $subtitle := .full_name | default .subtitle -}}
+{{- $photo := .photo -}}
+{{- $url := .url -}}
+
+{{ if $url }}
+  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="group block rounded-lg border border-border bg-card overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg">
+{{ else }}
+  <div class="group block rounded-lg border border-border bg-card overflow-hidden transition">
+{{ end }}
+    <div class="h-48 overflow-hidden bg-muted/10">
+      {{ if $photo }}
+        <img src="{{ $photo }}" alt="{{ $title }} certificate" class="h-full w-full object-cover" />
+      {{ else }}
+        <div class="flex h-full w-full items-center justify-center text-muted-foreground">No image</div>
+      {{ end }}
+    </div>
+    <div class="p-4">
+      <h3 class="text-foreground text-lg font-semibold">{{ $title }}</h3> <p>aa</p>
+      {{ if $subtitle }}
+        <p class="text-muted-foreground mt-2 text-sm leading-relaxed">{{ $subtitle }}</p>
+      {{ end }}
+    </div>
+{{ if $url }}
+  </a>
+{{ else }}
+  </div>
+{{ end }}

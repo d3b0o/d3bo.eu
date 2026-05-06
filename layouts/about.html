@@ -21,7 +21,53 @@
     </div>
   </div>
 
-  <!-- Links section -->
+  {{ $certs := .Params.certifications }}
+  {{ if $certs }}
+    <div class="mt-12">
+      <h2 class="text-foreground mb-6 text-2xl font-bold">Certifications</h2>
+      <div class="relative">
+        <!-- 时间轴线 -->
+        <div class="bg-border absolute top-0 bottom-0 left-4 w-0.5"></div>
+        {{ range $certs }}
+          <div class="relative mb-6">
+            <!-- 圆点 -->
+            <div class="bg-accent border-background absolute left-2 z-10 h-4 w-4 rounded-full border-2"></div>
+            <div class="ml-12">
+              <h3 class="text-foreground text-lg font-semibold">{{ .acronym }}</h3>
+              <p class="text-muted-foreground mt-1 text-sm">{{ .full_name }}</p>
+              <p class="text-muted-foreground mt-1 text-sm">{{ .date | dateFormat "January 2006" }}</p>
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm">View Certificate</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ $work := .Params.work_experience }}
+  {{ if $work }}
+    <div class="mt-12">
+      <h2 class="text-foreground mb-6 text-2xl font-bold">Work Experience</h2>
+      <div class="relative">
+        <!-- 时间轴线 -->
+        <div class="bg-border absolute top-0 bottom-0 left-4 w-0.5"></div>
+        {{ range $work }}
+          <div class="relative mb-6">
+            <!-- 圆点 -->
+            <div class="bg-accent border-background absolute left-2 z-10 h-4 w-4 rounded-full border-2"></div>
+            <div class="ml-12">
+              <h3 class="text-foreground text-lg font-semibold">{{ .position }} at {{ .company }}</h3>
+              <p class="text-muted-foreground mt-1 text-sm">{{ .start_date | dateFormat "January 2006" }} - {{ if eq .end_date "Present" }}{{ .end_date }}{{ else }}{{ .end_date | dateFormat "January 2006" }}{{ end }}</p>
+              <p class="text-muted-foreground mt-1 text-sm">{{ .description }}</p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
   {{ $links := .Params.links }}
   {{ if $links }}
     <div class="mt-12">
@@ -38,5 +84,7 @@
       </div>
     </div>
   {{ end }}
+
+
   {{ partial "features/comments.html" . }}
 {{ end }}
