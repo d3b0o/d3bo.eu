@@ -11,10 +11,6 @@ links:
     icon: "https://github.com/fluidicon.png"
 
 certifications:
-  - acronym: "CRTA"
-    full_name: "Certified Red Team Analyist"
-    date: "2025-11-01"
-    url: "https://labs.cyberwarfare.live/credential/achievement/6921db3b7b627b6c7f09d067"
   - acronym: "eCPPTv2"
     full_name: "Professional Penetration Tester"
     date: "2024-07-15"
