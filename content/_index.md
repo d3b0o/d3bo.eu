@@ -16,4 +16,3 @@ author:
       icon: "linkedin"
 ---
 
-**Site Redesign!** This is my new website you can still check te old one at [old.d3bo.eu](https://old.d3bo.eu)
