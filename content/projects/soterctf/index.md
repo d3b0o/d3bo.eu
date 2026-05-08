@@ -85,7 +85,7 @@ Creating trophies is very important because it fosters a competitive spirit amon
 
 ### Hosting
 
-The next step was to switch my hosting from a cdmon plan—which only offered FTP and a website with no control over the server—to a VPS on Hostinger.
+The next step was to switch my hosting from a cdmon plan, which only offered FTP and a website with no control over the server, to a VPS on Hostinger.
 
 On the VPS, I only installed MySQL and Apache, without Docker, because I didn’t need it at the time and wasn’t familiar with it yet. Also, there was no version control system like Git for the website, I would simply upload a ZIP file with the code every time I wanted to update it, and unzip it into the website folder. That ended up causing several problems when I wanted to roll back updates, and it also caused my local files and the server files to get out of sync. CHAOS. But it worked :)
 

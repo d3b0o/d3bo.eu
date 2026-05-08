@@ -55,8 +55,8 @@ footer:
 
 # footer social link
 social:
-  - name: GitHub
-    url: https://github.com/d3bo
+  - name: Gitlab
+    url: https://gitlab.com/d3bo
     weight: 10
     params:
       icon: github
