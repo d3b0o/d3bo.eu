@@ -19,6 +19,12 @@ main:
     weight: 30
     params:
       icon: about
+
+  - name: Solvers
+    url: https://gitlab.com/d3bo/pwn
+    weight: 50
+    params:
+      icon:  link
   # - name: nav.tags
   #   pageRef: /tags
   #   weight: 40
