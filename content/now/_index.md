@@ -9,6 +9,12 @@ links:
   - name: "GitHub"
     url: "https://github.com/d3bo"
     icon: "https://github.com/fluidicon.png"
+  - name: "SoterCTF"
+    url: "https://soterctf.com/app/profile/81be2b70-d3c0-11f0-9e02-4a52c5e88dba"
+    icon: "https://cdn.soterctf.com/web/image/logo-D-cgJ-da.webp"
+  - name: "GitLab"
+    url: "https://gitlab.com/d3bo"
+    icon: "https://gitlab.com/favicon.ico"
 
 certifications:
   - acronym: "eCPPTv2"
