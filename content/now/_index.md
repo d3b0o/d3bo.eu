@@ -5,16 +5,20 @@ summary: "What I’m focusing on at this stage of my life"
 date: 2024-01-01T00:00:00+08:00
 links:
   - name: "Liknedin"
+    description: Work experience and education
     url: "https://www.linkedin.com/in/d3bo/"
-  - name: "GitHub"
-    url: "https://github.com/d3bo"
-    icon: "https://github.com/fluidicon.png"
-  - name: "SoterCTF"
-    url: "https://soterctf.com/app/profile/81be2b70-d3c0-11f0-9e02-4a52c5e88dba"
-    icon: "https://cdn.soterctf.com/web/image/logo-D-cgJ-da.webp"
   - name: "GitLab"
     url: "https://gitlab.com/d3bo"
+    description: "Some of my new projects"
     icon: "https://gitlab.com/favicon.ico"
+  - name: "SoterCTF"
+    description: "My SoterCTF profile"
+    url: "https://soterctf.com/app/profile/81be2b70-d3c0-11f0-9e02-4a52c5e88dba"
+    icon: "https://cdn.soterctf.com/web/image/logo-D-cgJ-da.webp"
+  - name: "GitHub"
+    description: "Old projects"
+    url: "https://github.com/d3b0o"
+    icon: "https://github.com/fluidicon.png"
 
 certifications:
   - acronym: "eCPPTv2"
