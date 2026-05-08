@@ -13,7 +13,7 @@ tags:
   - Open Source
 categories:
   - projects
-cover: "cover.png"
+cover: "cover.webp"
 website: "https://soterctf.com/"
 tech_stack:
   - HTML
@@ -37,8 +37,8 @@ In this post, I’m going to talk about the project I’ve been working on for t
 Between 2022 and 2024, I was creating challenges for Hackthebox, and, well… the wait time for a response from Hackthebox is over a year, and then they reply with just a couple of lines saying they don’t think the challenge is suitable for Hackthebox, which is pretty frustrating.
 
 {{< masonry columns=2 >}}
-![](images/htb_reject.png)
-![](images/rejected_2.png)
+![](images/htb_reject.webp)
+![](images/rejected_2.webp)
 {{< /masonry >}}
 
 So I created a simple PHP website to upload the challenges so my friends could view and solve them. At first, there were only two challenges, no input to submit flags, no login, nothing! Just a button to download the challenges. It was too basic, so I created a system for submitting solutions and a leaderboard so my friends could compete against each other.
@@ -46,10 +46,10 @@ So I created a simple PHP website to upload the challenges so my friends could v
 Adding features to a website to improve its appearance is very addictive, so the site began to evolve with new features and styles, such as a trophy system, animated backgrounds, and so on.
 
 {{< masonry columns=4 >}}
-![](images/soterv1_1.png)
-![](images/soterv1_2.png)
-![](images/soterv1_3.png)
-![](images/soterv1_4.png)
+![](images/soterv1_1.webp)
+![](images/soterv1_2.webp)
+![](images/soterv1_3.webp)
+![](images/soterv1_4.webp)
 {{< /masonry >}}
 
 
@@ -62,9 +62,9 @@ The website had become a mess full of duplicate code, poorly structured code, an
 Things started to get serious, so I called my friend [mele.mdp](https://www.instagram.com/mele.mdp/) to design the logo and color palette for the website. While we were discussing the project, we were playing a few games of Brawlhalla, specifically, I was playing as the character *mako*, who is a kind of shark, and his skin was so cool that we used it as inspiration for the logo.
 
 {{< masonry columns=3 >}}
-![](images/soterLogo_2.png)
-![](images/soterLogo_1.png)
-![](images/soterLogo_3.png)
+![](images/soterLogo_2.webp)
+![](images/soterLogo_1.webp)
+![](images/soterLogo_3.webp)
 {{< /masonry >}}
 
 [mele.mdp](https://www.instagram.com/mele.mdp/) has also created new trophies for “First Blood,” “Top 3,” “100% Platform Completion,” etc. The ones from the other version were created using AI, and I'm not a big fan of AI generated images. 
@@ -73,14 +73,14 @@ Creating trophies is very important because it fosters a competitive spirit amon
 
 
 {{< masonry columns=4 >}}
-![](images/trof1.png)
-![](images/trof2.png)
-![](images/trof3.png)
-![](images/trof4.png)
-![](images/trof5.png)
-![](images/trof6.png)
-![](images/trof7.png)
-![](images/trof8.png)
+![](images/trof1.webp)
+![](images/trof2.webp)
+![](images/trof3.webp)
+![](images/trof4.webp)
+![](images/trof5.webp)
+![](images/trof6.webp)
+![](images/trof7.webp)
+![](images/trof8.webp)
 {{< /masonry >}}
 
 ### Hosting
@@ -181,17 +181,17 @@ GROUP BY u.id
 On top of that, I started adding some pretty absurd features, for example, one day I watched the movie about how Facebook was created, and I thought, “Why not? Let’s include a social media platform like Twitter in a CTF.” Looking back on it now, I don’t know why I wasted my time on that nonsense
 
 {{< masonry columns=3 >}}
-![](images/sn_2.png)
-![](images/sn_3.png)
-![](images/sn_4.png)
+![](images/sn_2.webp)
+![](images/sn_3.webp)
+![](images/sn_4.webp)
 {{< /masonry >}}
 
 And I built a ticketing system with WebSockets from scratch, because why use Discord when I can have my own chat?
 
 {{< masonry columns=3 >}}
-![](images/support_3.png)
-![](images/support_2.png)
-![](images/support_1.png)
+![](images/support_3.webp)
+![](images/support_2.webp)
+![](images/support_1.webp)
 {{< /masonry >}}
 
 
@@ -205,11 +205,11 @@ Once everything was ready, my friends and I started creating challenges, for an 
 We also started looking for sponsors by reaching out to many companies in the industry, asking for money or products to offer as prizes in the competition. We attended events with SoterCTF business cards and even went to a startup competition in Barcelona
 
 {{< masonry columns=2 >}}
-![](images/event_1.jpg)
-![](images/event_4.jpg)
-![](images/event_3.png)
-![](images/event_2.jpg)
-![](images/event_5.jpg)
+![](images/event_1.webp)
+![](images/event_4.webp)
+![](images/event_3.webp)
+![](images/event_2.webp)
+![](images/event_5.webp)
 {{< /masonry >}}
 
 The events didn't go very well, so we started sending emails to leading companies in the industry, such as:
@@ -232,7 +232,7 @@ In August 2025, exactly one year after starting this project, I decided to delet
 
 The first thing I did was design the database. In previous versions, I had been building the database on the fly as I needed tables, which led to a lack of control and chaos, so I grabbed a pen and paper and started drawing the ERD.
 
-![](images/erd.jpg)
+![](images/erd.webp)
 
 Although it eventually grew to 74 tables with more than 10,000 records
 
@@ -811,7 +811,7 @@ With all of this, we were able to reach a certain audience, but we wanted more, 
 
 Thanks to that, we reached 600 users on soterctf and 377 participants in the competition
 
-![](images/admin_panel.png)
+![](images/admin_panel.webp)
 
 There was a problem: even though it clearly stated everywhere that the contest was for students in Spain, people from many different countries signed up. After giving it some thought, we decided to let them participate but without the chance to win a prize. We had users from:
 
@@ -833,7 +833,7 @@ Plus all the people that didn't specify their country
 
 In addition to pre-event marketing, post-event marketing is also important. We wanted people to keep talking about the event even after it had ended, so we launched two initiatives. The first was to give participants certificates of participation, encouraging them to post photos of their certificates on LinkedIn.
 
-![](images/linkedin_1.png)
+![](images/linkedin_1.webp)
 
 The second approach we took for post-competition marketing was to offer an additional prize for the best write-up (solution to a challenge). This encouraged people to post their solutions to the challenges on their websites, thereby increasing visibility for Soter. Here are some of the write-ups we received: 
 

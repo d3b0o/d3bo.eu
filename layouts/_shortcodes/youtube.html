@@ -1,0 +1,33 @@
+<!-- youtube.html -->
+{{ $video := .Get 0 | default "" }}
+{{ $videoId := "" }}
+
+{{- if in $video "youtu.be/" -}}
+  {{ $videoId = replaceRE `.*youtu\.be/([A-Za-z0-9_-]{11}).*` "$1" $video }}
+{{- else if in $video "watch?v=" -}}
+  {{ $videoId = replaceRE `.*[?&]v=([A-Za-z0-9_-]{11}).*` "$1" $video }}
+{{- else if in $video "embed/" -}}
+  {{ $videoId = replaceRE `.*embed/([A-Za-z0-9_-]{11}).*` "$1" $video }}
+{{- else if gt (len $video) 0 -}}
+  {{ $videoId = $video }}
+{{- end -}}
+
+{{- if or (eq $videoId "") (ne (len $videoId) 11) -}}
+<div class="max-w-4xl mx-auto my-8 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+  <p class="text-destructive font-medium">Shortcode YouTube inválido. Usa un ID o URL de YouTube válido.</p>
+</div>
+{{- else -}}
+<div class="max-w-4xl mx-auto my-8 bg-card border border-border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+  <div class="h-96 md:h-[500px] lg:h-[600px]">
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/{{ $videoId }}?rel=0&amp;showinfo=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+{{- end -}}
